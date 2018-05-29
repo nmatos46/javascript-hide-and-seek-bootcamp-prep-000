@@ -7,13 +7,16 @@ function nestedTarget(){
 }
 
 function increaseRankBy(n){
-  //get all li elements in an element with class "ranked-list"
-  var ranks = document.getElementsByClassName('ranked-list').querySelectorAll('li')
+  //get all ul elements with class "ranked-list"
+  var ranks = document.getElementsByClassName('ranked-list')
   
-  //iterate over all li elements to change them
+  //iterate over all ul elements to change them
   for (var i=0; i<ranks.length; i++){
     ranks[i].innerHTML = parseInt(ranks[i].innerHTML) + n
   }
   
+}
+
+function deepestChild(){
   
 }
